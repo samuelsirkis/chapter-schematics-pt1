@@ -1,10 +1,13 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "hello": {
-      "description": "A schematic that says hello",
-      "factory": "./hello/index#main",
-      "schema": "./hello/schema.json"
+    "commit-lint": {
+      "description": "Adds commit lint with husky",
+      "factory": "./commit-lint/index#main"
+    },
+    "ng-add": {
+      "description": "A blank schematic.",
+      "factory": "./ng-add/index#ngAdd"
     }
   }
 }
