@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsHello",
+  "title": "Hello Options Schema",
+  "type": "object",
+  "description": "A schematic that says hello.",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the person.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    }
+  }
+}
